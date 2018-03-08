@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NotificationReader</string>
+
+    <string name="header_budget">Budget</string>
+    <string name="header_expenditures">Expenditures</string>
+    <string name="placeholder_balance">$0.00</string>
+</resources>

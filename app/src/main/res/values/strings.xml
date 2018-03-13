@@ -4,4 +4,13 @@
     <string name="header_budget">Budget</string>
     <string name="header_expenditures">Expenditures</string>
     <string name="placeholder_balance">$0.00</string>
+
+    <string name="button_addtransaction">Add Transaction</string>
+    <string name="button_filter">Filter</string>
+
+    <!-- activity_addtransaction -->
+    <string name="edittext_amount">Amount</string>
+    <string name="textview_clear">Clear</string>
+    <string name="button_add">Add</string>
+    <string name="button_cancel">Cancel</string>
 </resources>

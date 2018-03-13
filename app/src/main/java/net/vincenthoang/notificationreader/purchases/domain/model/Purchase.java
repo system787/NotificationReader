@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 
 import com.google.common.base.Objects;
 import com.google.common.base.Strings;
+import com.google.common.primitives.Ints;
 
 import java.util.UUID;
 
@@ -77,6 +78,10 @@ public class Purchase {
         return mDescription;
     }
 
+    public boolean isEmpty() {
+        return Strings.isNullOrEmpty(mType) && Strings.isNullOrEmpty(mDescription) && (mAmount == 0);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -93,5 +98,15 @@ public class Purchase {
     @Override
     public int hashCode() {
         return Objects.hashCode(mId, mType, mDescription, mAmount);
+    }
+
+    @Override
+    public String toString() {
+        return "Purchase{" +
+                "mId='" + mId + '\'' +
+                ", mAmount=" + mAmount +
+                ", mType='" + mType + '\'' +
+                ", mDescription='" + mDescription + '\'' +
+                '}';
     }
 }
